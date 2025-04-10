@@ -99,7 +99,9 @@ public class Gut_health {
 			    Thread.sleep(1000);
                 js.executeScript("var event = new MouseEvent('mouseover', {bubbles: true}); arguments[0].dispatchEvent(event);", element);
 			    element.click();
-			    Thread.sleep(3000);
+			    Thread.sleep(2000);
+			    act.moveByOffset(50, 50).perform();
+			    Thread.sleep(2000);
 			    driver.navigate().back();
 			    Thread.sleep(3000);
 			}
